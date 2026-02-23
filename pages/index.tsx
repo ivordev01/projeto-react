@@ -11,8 +11,13 @@ export default function Page()
 
     // Página será renderizada
     return (
-        <View style={[styles.background, styles.text, styles.body, styles.container1]}>
+        <View style={[styles.text, styles.body, styles.background]}>
             <View style={styles.text}>Matheus Ivor Grigolon dos Reis                
+            </View>
+
+            <View style={[styles.highlight]}>
+                    <View style={styles.hightlightText}>Digite seu status
+                    </View>
             </View>
         </View>
     )
@@ -22,7 +27,7 @@ const styles = StyleSheet.create
 ({
     text:
     {
-        padding: 40,
+        padding: 20,
         color: "#FFFFFF",
         width: "100%",
         fontSize: 20,
@@ -30,13 +35,27 @@ const styles = StyleSheet.create
         fontWeight: "bold",
         textAlign: "left"
     },
-    container1:
+
+    highlight:
     {
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        color: "#FFFFFF",
+        width: "100%",
+        height: "8%",
+        backgroundColor: "#252525",
+        marginTop: 0,
+        marginRight: 10,
+        borderRadius: 15
+    },
+
+    hightlightText:
+    {
+        padding: 30,
+        color: "#6b6b6b",
+        fontFamily: "Arial",
+        fontWeight: "normal",
+        fontSize: 16,
+        textAlign: "left",
+        textAlignVertical: "center",
+        marginTop: -20
     },
 
     body:
