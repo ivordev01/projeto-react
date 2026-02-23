@@ -11,7 +11,7 @@ export default function Page()
 
     // Página será renderizada
     return (
-        <View style={[styles.background, styles.text, styles.body]}>
+        <View style={[styles.background, styles.text, styles.body, styles.container1]}>
             <View style={styles.text}>Matheus Ivor Grigolon dos Reis                
             </View>
         </View>
@@ -20,25 +20,38 @@ export default function Page()
 
 const styles = StyleSheet.create
 ({
-    background:
-    {
-        width: "100%",
-        height: "100%",
-        backgroundColor: "black"
-    },
-
     text:
     {
+        padding: 40,
         color: "#FFFFFF",
         width: "100%",
         fontSize: 20,
         fontFamily: "Arial",
-        fontWeight: "medium",
-        textAlign: "center",
+        fontWeight: "bold",
+        textAlign: "left"
+    },
+    container1:
+    {
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        color: "#FFFFFF",
     },
 
     body:
     {
-        padding: 20
+        padding: 20,
+        display: "flex",
+        color: "#FFFFFF",
+        width: "100%",
+        height: "100%",
+    },
+
+        background:
+    {
+        width: "100%",
+        height: "100%",
+        backgroundColor: "#141414"
     }
 })
