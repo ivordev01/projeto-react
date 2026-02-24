@@ -223,6 +223,7 @@ const styles = StyleSheet.create
     {
         flex: 1,
         padding: 30,
+        paddingRight: 60,
         backgroundColor: "#141414"
     }
 })
