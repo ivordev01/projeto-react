@@ -32,7 +32,6 @@ export default function Page()
                     </Text>
                 </View>
             </View>
-
             <View style={[styles.highlight]}>
                 <View>
                     <Entypo style={{marginRight: -10, marginLeft: 10}} name="emoji-happy" size={16} color="#a6a6a6" />
@@ -64,7 +63,11 @@ export default function Page()
                 <Image source={require("../images/sam lake.jpg")} style={styles.imageTrophyStyle}/>
                 <Image source={require("../images/miku.jpg")} style={styles.imageTrophyStyle}/>
             </Text>
-        </View>
+            </View>
+            <View style={styles.navBarBody}>
+                    <Text style={styles.navBarText}>
+                    </Text>
+                </View>
         </View>
     )
 }
@@ -213,6 +216,29 @@ const styles = StyleSheet.create
         textAlign: "left"
     },
 
+    navBarBody:
+    {
+        width: "100%",
+        height: 80,
+        backgroundColor: "#252525",
+    },
+
+    navBarText:
+    {
+        padding: 20,
+        color: "#FFFFFF",
+        fontSize: 12,
+        fontFamily: "Arial",
+        fontWeight: "normal",
+    },
+
+    navBar:
+    {
+        width: "100%",
+        height: 50,
+        backgroundColor: "#252525",
+    },
+
     body:
     {
         flex: 1,
@@ -223,7 +249,6 @@ const styles = StyleSheet.create
     {
         flex: 1,
         padding: 30,
-        paddingRight: 60,
         backgroundColor: "#141414"
     }
 })
