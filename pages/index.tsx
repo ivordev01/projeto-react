@@ -283,6 +283,7 @@ const styles = StyleSheet.create
         alignItems: "center",
         display: "flex",
         flexDirection: "column",
+        marginTop: 1,
     },
 
     navBarItemProfilePhoto:
