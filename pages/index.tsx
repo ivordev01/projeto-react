@@ -65,9 +65,27 @@ export default function Page()
             </Text>
             </View>
             <View style={styles.navBarBody}>
-                    <Text style={styles.navBarText}>
+                <View style={styles.navBarItemHome}>
+                    <Octicons name="home" size={24} color="#a6a6a6" style={{marginTop: 15}}/>
+                    <Text style={styles.navBarText}>Home
                     </Text>
                 </View>
+                <View style={styles.navBarItemInbox}>
+                    <Octicons name="inbox" size={24} color="#a6a6a6" style={{marginTop: 15}}/>
+                    <Text style={styles.navBarText}>Inbox
+                    </Text>
+                </View>
+                <View style={styles.navBarItemExplore}>
+                    <Octicons name="telescope" size={24} color="#a6a6a6" style={{marginTop: 15}}/>
+                    <Text style={styles.navBarText}>Explorar
+                    </Text>
+                </View>
+                <View style={styles.navBarItemProfile}>
+                    <Image source={require("../images/DSC06496 copy.png")} style={styles.navBarItemProfilePhoto}/>
+                    <Text style={styles.navBarText}>Perfil
+                    </Text>
+                </View>
+            </View>
         </View>
     )
 }
@@ -221,22 +239,57 @@ const styles = StyleSheet.create
         width: "100%",
         height: 80,
         backgroundColor: "#252525",
+        flexDirection: "row",
     },
 
     navBarText:
     {
         padding: 20,
-        color: "#FFFFFF",
+        color: "#a6a6a6",
         fontSize: 12,
         fontFamily: "Arial",
         fontWeight: "normal",
+        marginTop: -15,
     },
 
-    navBar:
+    navBarItemHome:
     {
-        width: "100%",
-        height: 50,
-        backgroundColor: "#252525",
+        flex: 1,
+        alignItems: "center",
+        display: "flex",
+        flexDirection: "column",
+    },
+
+    navBarItemInbox:
+    {
+        flex: 1,
+        alignItems: "center",
+        display: "flex",
+        flexDirection: "column",
+    },
+
+    navBarItemExplore:
+    {
+        flex: 1,
+        alignItems: "center",
+        display: "flex",
+        flexDirection: "column",
+    },
+
+    navBarItemProfile:
+    {
+        flex: 1,
+        alignItems: "center",
+        display: "flex",
+        flexDirection: "column",
+    },
+
+    navBarItemProfilePhoto:
+    {
+        width: 24,
+        height: 24,
+        borderRadius: 50,
+        marginTop: 15,
     },
 
     body:
