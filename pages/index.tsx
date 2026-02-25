@@ -28,7 +28,7 @@ export default function Page()
                         Matheus Ivor Grigolon dos Reis
                     </Text>
                     <Text style={styles.nickname}>
-                        ivordev01 ° he/him
+                        ivordev01<View style={{width: 4, height: 4, backgroundColor: "#6b6b6b", borderRadius: 50, marginLeft: 5, marginBottom: 4}}/> he/him
                     </Text>
                 </View>
             </View>
@@ -54,7 +54,7 @@ export default function Page()
                 <Entypo name="instagram" size={16} color="#9b9b9b" style={{marginRight: 10}}/>ivorkkj
             </Text>
             <Text style={[styles.profileFollowers]}>
-                <Octicons name="person" size={16} color="#9b9b9b" style={{marginRight: 10}}/>12 seguidores ° 9 seguindo
+                <Octicons name="person" size={16} color="#9b9b9b" style={{marginRight: 10}}/>12 seguidores<View style={{width: 4, height: 4, backgroundColor: "#6b6b6b", borderRadius: 50, marginLeft: 5, marginBottom: 3}}/> 9 seguindo
             </Text>
             <Text style={[styles.trophies]}>
                 <Octicons name="trophy" size={16} color="#9b9b9b" style={{marginRight: 10}}/>
@@ -81,6 +81,7 @@ export default function Page()
                     </Text>
                 </View>
                 <View style={styles.navBarItemProfile}>
+                    <View style={styles.navBarIconSelected}/>
                     <Image source={require("../images/DSC06496 copy.png")} style={styles.navBarItemProfilePhoto}/>
                     <Text style={styles.navBarText}>Perfil
                     </Text>
@@ -290,6 +291,19 @@ const styles = StyleSheet.create
         height: 24,
         borderRadius: 50,
         marginTop: 15,
+        outlineStyle: "solid",
+        outlineColor: "#8fbfff",
+        outlineWidth: 1.5,
+    },
+
+    navBarIconSelected:
+    {
+        backgroundColor: "#263346",
+        width: 55,
+        height: 35, 
+        borderRadius: 40,
+        position: "absolute",
+        top: 8,
     },
 
     body:
