@@ -2,6 +2,7 @@
 //<p> = <text>
 import Entypo from '@expo/vector-icons/Entypo';
 import Feather from '@expo/vector-icons/Feather';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import Octicons from '@expo/vector-icons/Octicons';
 import { Image, StyleSheet, Text, View } from "react-native";
 
@@ -53,6 +54,9 @@ export default function Page()
             <Text style={[styles.linkIcons, styles.linkTextInstagram]}>
                 <Entypo name="instagram" size={16} color="#9b9b9b" style={{marginRight: 10}}/>ivorkkj
             </Text>
+            <Text style={[styles.linkIcons, styles.linkTextSteam]}>
+                <FontAwesome5 name="steam" size={16} color="#9b9b9b" style={{marginRight: 10}}/>steampowered.com/espuleta_
+            </Text>
             <Text style={[styles.profileFollowers]}>
                 <Octicons name="person" size={16} color="#9b9b9b" style={{marginRight: 10}}/>12 seguidores<View style={{width: 4, height: 4, backgroundColor: "#6b6b6b", borderRadius: 50, marginLeft: 5, marginBottom: 3}}/> 9 seguindo
             </Text>
@@ -96,9 +100,9 @@ const styles = StyleSheet.create
     imageProfileStyle:
     {
         marginRight: 10,
-        marginBottom: 10,
-        width: 60,
-        height: 60,
+        marginBottom: 15,
+        width: 70,
+        height: 70,
         borderRadius: 50,
     },
 
@@ -135,6 +139,7 @@ const styles = StyleSheet.create
 
     fullName:
     {
+        marginLeft: 5,
         fontSize: 18,
         fontFamily: "Arial",
         fontWeight: "bold",
@@ -144,6 +149,7 @@ const styles = StyleSheet.create
     nickname:
     {
         marginTop: 5, 
+        marginLeft: 5,
         fontFamily: "Arial",
         fontWeight: "semibold",
         color: "#6b6b6b",
@@ -168,6 +174,15 @@ const styles = StyleSheet.create
     },
 
     linkTextInstagram:
+    {
+        color: "#FFFFFF",
+        fontSize: 14,
+        fontFamily: "Arial",
+        fontWeight: "bold",
+        marginTop: -5,
+    },
+
+    linkTextSteam:
     {
         color: "#FFFFFF",
         fontSize: 14,
